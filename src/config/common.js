@@ -48,6 +48,9 @@ export function getResolve(config, paths) {
         '.web.js', '.web.jsx', '.web.ts', '.web.tsx',
         '.js', '.json', '.jsx', '.ts', '.tsx',
       ],
+      alias: {
+        ...config.alias,
+      },
     },
     resolveLoader: {
       modules: [
